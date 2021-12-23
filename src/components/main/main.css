@@ -151,6 +151,9 @@ margin-left: 0.75rem;
 .mobile-view-logout-button{
     display: none;
 }
+.create-form>h1{
+    text-align: center;
+}
 @media only screen and (max-width: 800px) {
     .main-left{
         display: none;

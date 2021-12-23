@@ -160,6 +160,7 @@ export default function Main() {
             </button>
 
             <form className="create-form">
+                <h1>Add New employee here</h1>
               <input
                 className="create-form-input"
                 type="text"
@@ -268,6 +269,7 @@ export default function Main() {
                       <IoCloseCircleSharp size={36} />
                     </button>
                     <form className="create-form">
+                    <h1>Edit your employee here</h1>
                       <input
                         className="create-form-input"
                         type="text"
