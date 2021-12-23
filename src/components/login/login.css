@@ -1,0 +1,125 @@
+.login-container {
+  background-color: #000428;
+  height: 100vh;
+}
+.login-navbar {
+  height: 15%;
+  display: flex;
+}
+
+.login-main {
+  position: relative;
+  height: 85%;
+  display: flex;
+  align-items: center;
+}
+
+.login-main-left {
+  width: 50%;
+  padding: 2rem;
+}
+
+.login-main-left > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.login-main-right {
+  width: 50%;
+  padding: 2rem;
+}
+.login-main-right > h1 {
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  overflow: hidden;
+  border-right: 0.15rem solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.2rem;
+  animation: typing 3.5s steps(35, end), blink-caret 0.75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+.login-form {
+  padding: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-top: 1.5rem;
+  border-radius: 1rem;
+  width: 75%;
+  margin: 5rem auto;
+}
+.login-form-input {
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 0.6rem;
+  height: 2.5rem;
+  margin: 2rem 0 2rem;
+  padding: 1rem;
+  border: 1px;
+  background-color: rgb(240, 236, 236);
+}
+
+.login-form-input:focus {
+  outline: 0;
+}
+
+.login-form-submit {
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 0.6rem;
+  height: 2.5rem;
+  padding: 1rem;
+  background-color: #294d9b;
+  border-width: 0px;
+  margin-top: 1rem;
+  padding: 0px;
+}
+.warning-message {
+  color: rgb(172, 12, 12);
+}
+
+@media only screen and (max-width: 600px) {
+  .login-main-left {
+    display: none;
+  }
+  .login-main-right {
+    padding: 0.5rem;
+    width: 100%;
+  }
+  .login-form{
+    padding: 1.5rem;
+    margin-top: 0.5rem;
+    margin: 2rem auto;
+  }
+  .login-main-right > h1 {
+    font-size: 1.5rem;
+   
+  }
+}
+@media only screen and (max-width: 600px) {
+  .login-main-right > h1 {
+    font-size: 1rem;
+   
+  }
+}
