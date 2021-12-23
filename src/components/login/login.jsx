@@ -4,13 +4,13 @@ import Logo from "../../assets/logo.png";
 import Main from "../../assets/main.svg";
 import { auth } from "../../firebaseConfig";
 
-
 const Login = () => {
   const emailRef = useRef(null);
   const passwordRef = useRef(null);
   const SignUp = (e) => {
     e.preventDefault();
-    auth.createUserWithEmailAndPassword(
+    auth
+      .createUserWithEmailAndPassword(
         emailRef.current.value,
         passwordRef.current.value
       )
@@ -25,7 +25,8 @@ const Login = () => {
   const SignIn = (e) => {
     console.log("I am hitted");
     e.preventDefault();
-    auth.signInWithEmailAndPassword(
+    auth
+      .signInWithEmailAndPassword(
         emailRef.current.value,
         passwordRef.current.value
       )
@@ -66,23 +67,30 @@ const Login = () => {
                 placeholder="Password"
                 required="required"
               />
-              <p className="warning-message">* Minimum password length: 6 characters</p>
+              <p className="warning-message">
+                * Minimum password length: 6 characters
+              </p>
               <button
                 className="login-form-submit"
                 type="submit"
                 onClick={SignIn}
                 id="submitBtn"
-              > Sign In</button>
+              >
+                {" "}
+                Sign In
+              </button>
               <button
                 className="login-form-submit"
                 onClick={SignUp}
                 id="submitBtn"
-              >Sign Up</button>
+              >
+                Sign Up
+              </button>
             </form>
           </div>
         </div>
       </div>
     </div>
   );
-}
+};
 export default Login;
