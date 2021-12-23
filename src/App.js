@@ -28,7 +28,7 @@ function App() {
     <div className="app">
       <Switch>
         <Route exact path="/">
-          <Main />
+          {user ? <Main /> : <Login />}
         </Route>
         <Route exact path="/addParticipants">
           <AddParticipants />
