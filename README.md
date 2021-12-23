@@ -13,3 +13,7 @@ This is my final submission for my Frontend Task-:
 (6.) Due to only 2 days of time and my regular job, I haven't optimized it much but in interview round I can tell how much optimize I can do it, I know it's not that optimized but keeping time constraint in mind I did it.
 
 (7.) Logo is out of my creativity.
+
+(8.) Good to have avatar feature added i.e different avatar based on gender.
+
+(9.) Tried something with rating.

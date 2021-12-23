@@ -4,15 +4,12 @@ import { useNavigate } from "react-router-dom";
 import { IoLogOut, IoCloseCircleSharp } from "react-icons/io5";
 import { BsFillPlusCircleFill } from "react-icons/bs";
 import { AiFillEdit, AiFillDelete } from "react-icons/ai";
-import Logo from "../../assets/logoSmall.png";
-import Card from "../../reusable/card/card";
 import { auth } from "../../firebaseConfig";
 import Modal from "react-modal";
 import db from "../../firebaseConfig";
 import Stars from "../../reusable/stars/stars";
 import MaleAvatar from "../../assets/maleAvatar.png";
 import FemaleAvatar from "../../assets/femaleAvatar.png";
-import { Link } from "react-router-dom";
 
 const customStyles = {
   content: {
@@ -144,7 +141,6 @@ export default function Main() {
   return (
     <div className="main-container">
       <div className="main-left">
-        <img src={Logo} alt="logo" />
         <IoLogOut onClick={() => auth.signOut()} size={48} color="white" />
       </div>
       <div className="main-right">

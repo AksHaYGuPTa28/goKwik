@@ -5,16 +5,18 @@
   display: flex;
 }
 .main-left {
-  width: 10%;
+  width: 5%;
   background-color: #000428;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
 }
+
+.main-left>svg{
+margin-top: 2rem;
+margin-left: 0.75rem;
+}
+
 .main-right {
-  width: 90%;
+  width: 95%;
   background-color: #efb436d5;
   /* max-height: 100vh; */
   overflow: scroll;
@@ -104,9 +106,10 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin-top: 2rem;
 }
 .avatar-image{
-    width: 25%;
+    width: 30%;
     height: 70%;
     border-radius: 50%;
 }
@@ -119,19 +122,20 @@
 }
 .card-name{
     color: white;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
 
 }
 .card-designation{
     color: white;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 .card-bottom{
     height: 50%;
+    text-align: center;
 }
 .card-bottom-text{
     color: white;
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin-bottom: 1rem;
     margin-left: 2.5rem;
 }
